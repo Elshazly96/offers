@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلات مطروح 2025 - اختر البرج</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            direction: rtl;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 900px; /* Increased max-width to accommodate side-by-side boxes */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        header .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #004d99;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .special-offer {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 0;
+            margin: 20px -40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 10;
+            width: calc(100% + 80px); /* Adjust width to account for negative margin */
+        }
+        .special-offer marquee {
+            padding: 0 10px;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center items when they wrap */
+            gap: 30px; /* Space between the boxes */
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .option-box {
+            background-color: #f8f9fa; /* Lighter background for boxes */
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 100%; /* Default to full width for small screens */
+            max-width: 380px; /* Max width for each box */
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .option-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .option-box img {
+            max-width: 100%;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 2px solid #0056b3; /* Border around image */
+        }
+
+        .option-box h2 {
+            color: #004d99;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .option-box p {
+            color: #555;
+            font-size: 1em;
+            margin-bottom: 20px;
+            flex-grow: 1; /* Allow description to take available space */
+        }
+
+        .option-box .btn {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .option-box .btn:hover {
+            background-color: #003d7a;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .special-offer {
+                margin: 20px -25px;
+                width: calc(100% + 50px);
+            }
+            .option-box {
+                max-width: none; /* Allow boxes to take full width on smaller screens */
+            }
+            .options-grid {
+                flex-direction: column; /* Stack boxes vertically on small screens */
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="global_logo.png" alt="جلوبال بنها للنقل والرحلات" class="logo">
+        </header>
+        <h1>اختر جدول الأسعار للرحلات</h1>
+
+        <div class="special-offer">
+            <marquee behavior="scroll" direction="right" scrollamount="6">
+                ✨ عرض خاص: 1500 جنيه شقة غرفتين 4 سرير بدون انتقالات فقط فوج 30-5 | ولإضافة انتقالات الكرسي 500 جنيه ✨
+            </marquee>
+        </div>
+
+        <div class="options-grid">
+            <div class="option-box">
+                <img src="tatbikiyeen_tower.jpg" alt="برج نقابة التطبيقيين">
+                <h2>أسعار برج نقابة التطبيقيين</h2>
+                <p>برج نقابة التطبيقيين في وسط البلد شارع متفرع من شارع الإسكندرية على ناصية الشارع أحمد حسنين محل الهريسة والبرج بينه وبين البحر 5 دقائق مشي وأقرب شاطئ ليه شاطئ الهنا.</p>
+                <a href="index1.html" class="btn">عرض الأسعار</a>
+            </div>
+
+            <div class="option-box">
+                <img src="hana_tower.jpg" alt="برج الهنا">
+                <h2>أسعار برج الهنا</h2>
+                <p>برج الهنا في منطقة الفيروز نمرة 4 للبحر على بعد 2 دقيقتين للشاطئ الفيروز وبجانب الشارع السيرك الإيطالي.</p>
+                <a href="index2.html" class="btn">عرض الأسعار</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 جلوبال بنها للنقل والرحلات. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
